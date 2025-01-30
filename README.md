@@ -1,4 +1,68 @@
-# User Management System API Documentation
+# User Management System API
+
+## Project Overview
+The **User Management System API** is a backend service that handles user authentication, profile management, and notifications. It includes features such as user registration, login, profile updates, and admin functionalities.
+
+## Setup Instructions
+
+### Prerequisites
+Make sure you have the following installed:
+- [Node.js](https://nodejs.org/) (Version 18+ recommended)
+- [MongoDB](https://www.mongodb.com/) (Running locally or using a cloud service like MongoDB Atlas)
+- [Postman](https://www.postman.com/) (For API testing)
+
+### Installation Steps
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-repo/user-management-api.git
+   cd user-management-api
+   ```
+
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Setup Environment Variables**
+   Create a `.env` file in the root directory and add the following environment variables:
+   ```env
+   PORT=3000
+   MONGO_URI=mongodb://localhost:27017/db
+   JWT_SECRET=jwtsecret
+  
+   ```
+   > **Note:** Replace `your_jwt_secret_here` with a strong secret key.
+
+4. **Run the Server**
+   ```bash
+   npm install nodemon
+  
+   ```
+   > The server will start at `http://localhost:3000`
+
+5. **Run in Development Mode** (with auto-restart using Nodemon)
+   ```bash
+      nodemon index.js
+   ```
+
+
+
+## Folder Structure
+```
+/user-management-api
+│── src
+│   ├── models       # Database models (User, Notifications, etc.)
+│   ├── routes       # API routes
+│
+│   ├── middleware   # Authentication and validation middleware
+│   ├── index.js
+│── .env             # Environment variables
+│── package.json     # Dependencies and scripts
+│── README.md        
+```
+
+
+#  API Documentation
 
 ## Environment Setup
 Before testing the APIs, set up these environment variables in Postman:
