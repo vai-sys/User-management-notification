@@ -14,13 +14,13 @@ Make sure you have the following installed:
 ### Installation Steps
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-repo/user-management-api.git
-   cd user-management-api
+   git clone https://github.com/vai-sys/User-management-notification.git
+   cd user-management-notification
    ```
 
 2. **Install Dependencies**
    ```bash
-   npm install
+   npm install express mongoose bcryptjs jsonwebtoken cors dotenv
    ```
 
 3. **Setup Environment Variables**
